@@ -43,7 +43,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
     return gulp.src('assets/css/style.scss')
         .pipe(sass({
-            includePaths: ['css'],
+            includePaths: ['css', 'scss'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))

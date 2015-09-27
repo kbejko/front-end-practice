@@ -842,9 +842,8 @@ img {
   position: relative;
   height: 600px;
   background-image: url(../images/bird-bg.jpg);
-  background-size: auto 600px;
-  background-position: top-center;
-  background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed top;
   overflow: hidden; }
   .bird-box .logo {
     height: 100px;
@@ -874,3 +873,18 @@ img {
     position: absolute;
     left: 50%;
     margin-left: -480px; }
+
+.clothes-pics figure {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+  .clothes-pics figure.is-showing {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px); }
