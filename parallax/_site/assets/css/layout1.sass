@@ -11,6 +11,11 @@ figure
   margin: auto
 
 .content
+  position: relative
+  background: white
+  margin-bottom: 400px
+  overflow: hidden
+
   article
     padding: 100px 0
     max-width: 640px
@@ -28,43 +33,44 @@ img
   height: 600px
   background:
     image: url(../images/bird-bg.jpg)
-    size: cover
-    attachment: fixed top
+    size: auto 600px
+    position: top center
+    attachment: fixed
   overflow: hidden
 
-  .logo
-    height: 100px
-    width: 100%
-    background:
-      image: url(../images/black-bird-logo.svg)
-      position: center
-      repeat: no-repeat
-    position: absolute
-    top: 50%
-    margin-top: -50px
+.logo
+  height: 100px
+  width: 100%
+  background:
+    image: url(../images/black-bird-logo.svg)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 50%
+  margin-top: -50px
 
-  .fore-bird
-    width: 960px
-    height: 733px
-    background:
-      image: url(../images/fore-bird.png)
-      repeat: no-repeat
-      position: right bottom
-    position: absolute
-    left: 50%
-    margin-left: -420px
-    top: 400px
+.fore-bird
+  width: 960px
+  height: 733px
+  background:
+    image: url(../images/fore-bird.png)
+    repeat: no-repeat
+    position: right bottom
+  position: absolute
+  left: 50%
+  margin-left: -480px
+  top: 380px
 
-  .back-bird
-    width: 960px
-    height: 298px
-    background:
-      image: url(../images/back-bird.png)
-      repeat: no-repeat
-      position: top left
-    position: absolute
-    left: 50%
-    margin-left: -480px
+.back-bird
+  width: 960px
+  height: 298px
+  background:
+    image: url(../images/back-bird.png)
+    repeat: no-repeat
+    position: top left
+  position: absolute
+  left: 50%
+  margin-left: -480px
 
 // Model grid
 
@@ -75,14 +81,15 @@ img
     margin-bottom: 20px
     position: relative
     opacity: 0
-    transform: translateX(-20px)
-    transition: all 0.3s ease-in-out
+    transform: translateX(30px)
+    transition: all 0.4s ease-in-out
     overflow: hidden
     cursor: pointer
 
     &.is-showing
       opacity: 1
       transform: translateX(0px)
+
     img
       display: block
       transform: scale(1)
@@ -93,7 +100,7 @@ img
         left: 0%
 
       img
-          transform: scale(1.1)
+        transform: scale(1.1)
 
     figcaption
       position: absolute
@@ -130,7 +137,7 @@ img
     display: flex
     justify-content: center
     align-items: center
-    //opacity: 0
+    opacity: 0
 
   .promo-text
     color: white
@@ -183,3 +190,24 @@ img
 
   .post-3
     transform: translate(-100px, 20px)
+
+// Footer
+
+footer
+  background: black
+  color: white
+  padding: 40px 0
+  position: fixed
+  bottom: 0
+  width: 100%
+  z-index: -1
+
+  .footer-stuff
+    max-width: 640px
+    margin: 0 auto
+
+  a
+    color: white
+    
+  input
+    color: #666
