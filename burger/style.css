@@ -8,6 +8,7 @@
   cursor: pointer;
   transition: top 300ms ease-in-out;
 }
+
 i {
   display: block;
   height: 2px;
