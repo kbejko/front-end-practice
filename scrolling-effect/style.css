@@ -1,0 +1,27 @@
+body {
+  height: 1000vh;
+  background-color: lightsteelblue;
+}
+.parent {
+  position: absolute;
+  font-family: monospace;
+  font-size: 100px;
+  color: lightslategray;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+span {
+  display: block;
+  position: relative;
+  padding: 0 10px;
+  margin-left: -10px;
+  float: left;
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
