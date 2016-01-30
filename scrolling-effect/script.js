@@ -20,26 +20,29 @@ $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop()
 
-  $('.k').css({
-    'transform' : 'translate(' + wScroll / 1.9 + 'px, ' + wScroll / 2   + 'px)'
+  // $('.fast').css({
+  //   'transform' : 'translate(' + wScroll / 1.9 + 'px, ' + wScroll / 2   + 'px)'
+  // })
+  $('.medium').css({
+    'transform' : 'translate(' + wScroll / 2 + 'px, ' + -wScroll * 3  + 'px)'
   })
-  $('.l').css({
-    'transform' : 'translate(0, ' + wScroll / 5  + 'px)'
+  $('.slow-right').css({
+    'transform' : 'translate(' + wScroll / 2 + 'px, ' + -wScroll * .5  + 'px)'
   })
-  $('.a').css({
-    'transform' : 'translate(0, ' + wScroll / 10  + 'px)'
+  $('.slow-left').css({
+    'transform' : 'translate(' + -wScroll / 2 + 'px, ' + -wScroll * .5  + 'px)'
   })
-  $('.j').css({
-    'transform' : 'translate(0, ' + wScroll / 15  + 'px)'
+  $('.fast').css({
+    'transform' : 'translate(' + wScroll / 4 + 'px, ' + -wScroll * 5  + 'px)'
   })
-  $('.d').css({
-    'transform' : 'translate(0, ' + wScroll / 10  + 'px)'
-  })
-  $('.i').css({
-    'transform' : 'translate(0, ' + wScroll / 5  + 'px)'
-  })
-  $('.b').css({
-    'transform' : 'translate(' + -wScroll / 1.9 + 'px, ' + wScroll / 2   + 'px)'
-  })
+  // $('.d').css({
+  //   'transform' : 'translate(0, ' + wScroll / 10  + 'px)'
+  // })
+  // $('.i').css({
+  //   'transform' : 'translate(0, ' + -wScroll * 2  + 'px)'
+  // })
+  // $('.b').css({
+  //   'transform' : 'translate(' + -wScroll / 1.9 + 'px, ' + wScroll / 2   + 'px)'
+  // })
 
 })
