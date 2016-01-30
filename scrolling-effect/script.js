@@ -24,25 +24,25 @@ $(window).scroll(function(){
   //   'transform' : 'translate(' + wScroll / 1.9 + 'px, ' + wScroll / 2   + 'px)'
   // })
   $('.medium').css({
-    'transform' : 'translate(' + wScroll / 2 + 'px, ' + -wScroll * 3  + 'px)'
+    'transform' : 'translate(' + wScroll / 2 + '%, ' + -wScroll * 3  + '%)'
   })
   $('.slow-right').css({
-    'transform' : 'translate(' + wScroll / 2 + 'px, ' + -wScroll * .5  + 'px)'
+    'transform' : 'translate(' + wScroll / 2 + '%, ' + -wScroll * .5  + '%)'
   })
   $('.slow-left').css({
-    'transform' : 'translate(' + -wScroll / 2 + 'px, ' + -wScroll * .5  + 'px)'
+    'transform' : 'translate(' + -wScroll / 2 + '%, ' + -wScroll * .5  + '%)'
   })
   $('.fast').css({
-    'transform' : 'translate(' + wScroll / 4 + 'px, ' + -wScroll * 5  + 'px)'
+    'transform' : 'translate(' + wScroll / 4 + '%, ' + -wScroll * 5  + '%)'
   })
   // $('.d').css({
-  //   'transform' : 'translate(0, ' + wScroll / 10  + 'px)'
+  //   'transform' : 'translate(0, ' + wScroll / 10  + '%)'
   // })
   // $('.i').css({
-  //   'transform' : 'translate(0, ' + -wScroll * 2  + 'px)'
+  //   'transform' : 'translate(0, ' + -wScroll * 2  + '%)'
   // })
-  // $('.b').css({
-  //   'transform' : 'translate(' + -wScroll / 1.9 + 'px, ' + wScroll / 2   + 'px)'
-  // })
+  $('.s').css({
+    'transform' : 'translate(' + wScroll / .23 + '%, ' + -wScroll * 6   + '%)'
+  })
 
 })
